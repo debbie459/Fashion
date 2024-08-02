@@ -1,0 +1,347 @@
+<div class="container">
+    <div class="text-image">
+        <div class="first-part">
+            <h3>FIND THE BEST FASHION STYLE FOR YOU</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum non pellentesque lacus praesent accumsan ut ac lectus nullam.</p>
+        </div>
+    
+        <div class="image-div1">
+            <div class="curved-div">
+                <img src="assets/lady-img1.png" alt="image">
+                <button [routerLink]="'/login'">SHOP NOW</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="new-collections">
+        <p id="new-collections-txt">NEW COLLECTIONS</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum non pellentesque </p>
+
+        <div class="new-collections-images">
+            <div class="new-collections-image">
+                <img src="assets/short-sleeves-img.png">
+                <button [routerLink]="['/collections/new-collections']">SHORT SLEEVES</button>
+            </div>
+            <div class="new-collections-image">
+                <img src="assets/sweaters-img.png">
+                <button [routerLink]="['/collections/new-collections']">SWEATERS</button>
+            </div>
+            <div class="new-collections-image">
+                <img src="assets/long-sleeves-img.png">
+                <button [routerLink]="['/collections/new-collections']">LONG SLEEVES</button>
+                <!-- <img src="assets/showers.png" id="showers"> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="best-fashion">
+        <div class="first">
+            <p id="best-fashion-txt">BEST FASHION SINCE <br>2017</p>
+            <p>Amet fringilla pellentesque vel orci, non sed nibh turpis aliquet. Nisl in augue volutpat ultricies sed id maecenas enim. Dolor consequat lacus, sit habitasse est ipsum porta enim lectus. Egestas et nunc quis sed a vitae. Dui nibh euismod curabitur vel sodales in rhoncus duis nisl.</p>
+        </div>
+        
+        <div class="second">
+            <img src="assets/best-fashion-lady.png" alt="image" >
+            <div class="achievements">
+                <div>
+                    <p>2017</p>
+                    <span>FASHION <span id="founded-text">Founded</span></span>
+                </div>
+                <div>
+                    <p>10000+</p>
+                    <span>Product Sold</span>
+                </div>
+                <div>
+                    <p>5000+</p>
+                    <span>Product Review</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="best-fashion-desktop">
+
+        <div class="first">
+            <img src="assets/best-fashion-lady.png" alt="image" >
+            <div class="achievements">
+                <div>
+                    <p>2017</p>
+                    <span>FASHION <span id="founded-text">Founded</span></span>
+                </div>
+                <div>
+                    <p>10000+</p>
+                    <span>Product Sold</span>
+                </div>
+                <div>
+                    <p>5000+</p>
+                    <span>Product Review</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="second">
+            <p id="best-fashion-txt">BEST FASHION <br> SINCE 2017</p>
+            <p>Amet fringilla pellentesque vel orci, non sed nibh turpis aliquet. Nisl in augue volutpat ultricies sed id maecenas enim. Dolor consequat lacus, sit habitasse est ipsum porta enim lectus. Egestas et nunc quis sed a vitae. Dui nibh euismod curabitur vel sodales in rhoncus duis nisl.</p>
+        </div>
+    </div>
+ 
+
+    <div class="best-seller-wrapper">
+        <div class="best-seller">
+            <p id="best-seller-txt">BEST SELLER PRODUCT</p>
+            <p>Laoreet tortor arcu pharetra quis turpis. Commodo arcu odio nullam nulla tristique. Dui purus sit urna, lorem risus a non amet. Sem lorem nibh.</p>
+            <button [routerLink]="'bestseller'">SEE MORE</button>
+        </div>
+    
+         <div class="carousel">
+            <!-- <div class="carousel-background-image">
+                <img src="assets/pattern.png" alt="Background Pattern">
+            </div> -->
+        
+            <div class="carousel-images">
+                <div class="carousel-items">
+                    <img src="assets/guy1.png" alt="Guy 1" class="main-picture">
+                    <div class="item-details">
+                        <img src="assets/stars.png" alt="Stars">
+                        <p>Pastel Long Sleeve</p>
+                        <div>
+                            <span class="old-price">$220</span>
+                            <span class="new-price">$160</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="carousel-items">
+                    <img src="assets/guy1.png" alt="Guy 2">
+                    <div class="item-details">
+                        <img src="assets/stars.png" alt="Stars">
+                        <p>Long Leather Jacket</p>
+                        <div>
+                            <span class="old-price">$320</span>
+                            <span class="new-price">$260</span>
+                        </div>
+                    </div>
+                </div>
+            </div>     
+        
+            <div class="carousel-controls">
+                <button class="one"></button>
+                <button class="two"></button>
+                <button class="three"></button>
+                <button class="four"></button>
+            </div> 
+        </div> 
+    </div>
+
+
+
+
+    <div class="our-products">
+        <p id="product-txt">OUR PRODUCT</p>
+        <nav>
+            <p [routerLink]="['/products/hot']">HOT</p>
+            <p [routerLink]="['/products/on-sale']"> On Sale</p>
+            <p [routerLink]="['/products/trending']">Trending</p>
+            <p [routerLink]="['/products/arrivals']">On Arrival</p>
+        </nav>
+        
+        <div class="products-div">
+            <div class="products-item">
+                <div class="main-image">
+                    <img src="assets/guy1.png" >
+                </div>
+                <div class="other-part">
+                    <img src="assets/stars.png">
+                    <h5>Big Jacket</h5>
+                    <div>
+                        <span>$20</span><span>$10</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="products-item">
+                <div class="main-image">
+                    <img src="assets/guy1.png" >
+                </div>
+                <div class="other-part">
+                    <img src="assets/stars.png">
+                    <h5>Big Jacket</h5>
+                    <div>
+                        <span>$20</span><span>$10</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="products-item">
+                <div class="main-image">
+                    <img src="assets/guy1.png" >
+                </div>
+                <div class="other-part">
+                    <img src="assets/stars.png">
+                    <h5>Big Jacket</h5>
+                    <div>
+                        <span>$20</span><span>$10</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="products-item">
+                <div class="main-image">
+                    <img src="assets/guy1.png" >
+                </div>
+                <div class="other-part">
+                    <img src="assets/stars.png">
+                    <h5>Big Jacket</h5>
+                    <div>
+                        <span>$20</span><span>$10</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="products-item">
+                <div class="main-image">
+                    <img src="assets/guy1.png" >
+                </div>
+                <div class="other-part">
+                    <img src="assets/stars.png">
+                    <h5>Big Jacket</h5>
+                    <div>
+                        <span>$20</span><span>$10</span>
+                    </div>
+                </div>
+            </div>
+
+            
+
+
+            
+        </div>
+
+
+
+    </div>
+
+
+    <div class="deals">
+        <div class="div-info">
+            <div class="deal-day">
+            <p id="deal-txt">DEAL OF THE DAY</p>
+            <p>Leo tortor posuere tincidunt magna velit dignissim a eu risus. Ipsum mattis ultricies.</p>
+            </div>
+
+            <div class="countdown"> 
+                <div class="countdown-item">
+                <h3>03</h3>
+                <span>days</span>
+                </div>
+
+                <div class="countdown-item">
+                <h3>14</h3>
+                <span>hours</span>
+                </div>
+
+                <div class="countdown-item">
+                <h3>28</h3>
+                <span>minutes</span>
+                </div>
+            </div>
+        </div>    
+        <div class="man-pic">
+            <img src="assets/man-in-suit.png">
+            <button [routerLink]="['/deal-of-the-day']">SHOP NOW</button>
+        </div>
+    </div>
+
+
+    <div class="reviews">
+        <p id="review-txt">WHAT PEOPLE SAY <br> ABOUT US</p>
+        <p id="other-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum non pellentesque </p>
+
+        <div class="review-div">
+            <div class="testimonial">
+                <h5>the items came to me fas</h5>
+                <h6>i ordered a medium and it came as ordered</h6>
+                <p>Sed sed feugiat eros, massa vestibulum at curabitur. Tellus hendrerit ut integer pellentesque sit. Cras integer et quisque libero nulla dignissim faucibus ornare. Libero, ut a diam varius. Blandit molestie ultrices .</p>
+                <div>
+                    <img src="assets/customer-pic.png">
+                    <h5>Bradley Bright</h5>
+                    <p>Customer</p>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <h5>the items came to me fas</h5>
+                <h6>i ordered a medium and it came as ordered</h6>
+                <p>Sed sed feugiat eros, massa vestibulum at curabitur. Tellus hendrerit ut integer pellentesque sit. Cras integer et quisque libero nulla dignissim faucibus ornare. Libero, ut a diam varius. Blandit molestie ultrices .</p>
+                <div>
+                    <img src="assets/customer-pic.png">
+                    <h5>Bradley Bright</h5>
+                    <p>Customer</p>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <h5>the items came to me fas</h5>
+                <h6>i ordered a medium and it came as ordered</h6>
+                <p>Sed sed feugiat eros, massa vestibulum at curabitur. Tellus hendrerit ut integer pellentesque sit. Cras integer et quisque libero nulla dignissim faucibus ornare. Libero, ut a diam varius. Blandit molestie ultrices .</p>
+                <div>
+                    <img src="assets/customer-pic.png">
+                    <h5>Bradley Bright</h5>
+                    <p>Customer</p>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <h5>the items came to me fas</h5>
+                <h6>i ordered a medium and it came as ordered</h6>
+                <p>Sed sed feugiat eros, massa vestibulum at curabitur. Tellus hendrerit ut integer pellentesque sit. Cras integer et quisque libero nulla dignissim faucibus ornare. Libero, ut a diam varius. Blandit molestie ultrices .</p>
+                <div>
+                    <img src="assets/customer-pic.png">
+                    <h5>Bradley Bright</h5>
+                    <p>Customer</p>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <h5>the items came to me fas</h5>
+                <h6>i ordered a medium and it came as ordered</h6>
+                <p>Sed sed feugiat eros, massa vestibulum at curabitur. Tellus hendrerit ut integer pellentesque sit. Cras integer et quisque libero nulla dignissim faucibus ornare. Libero, ut a diam varius. Blandit molestie ultrices .</p>
+                <div>
+                    <img src="assets/customer-pic.png">
+                    <h5>Bradley Bright</h5>
+                    <p>Customer</p>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <h5>the items came to me fas</h5>
+                <h6>i ordered a medium and it came as ordered</h6>
+                <p>Sed sed feugiat eros, massa vestibulum at curabitur. Tellus hendrerit ut integer pellentesque sit. Cras integer et quisque libero nulla dignissim faucibus ornare. Libero, ut a diam varius. Blandit molestie ultrices .</p>
+                <div>
+                    <img src="assets/customer-pic.png">
+                    <h5>Bradley Bright</h5>
+                    <p>Customer</p>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <h5>the items came to me fas</h5>
+                <h6>i ordered a medium and it came as ordered</h6>
+                <p>Sed sed feugiat eros, massa vestibulum at curabitur. Tellus hendrerit ut integer pellentesque sit. Cras integer et quisque libero nulla dignissim faucibus ornare. Libero, ut a diam varius. Blandit molestie ultrices .</p>
+                <div>
+                    <img src="assets/customer-pic.png">
+                    <h5>Bradley Bright</h5>
+                    <p>Customer</p>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+
+
+
+</div>

@@ -1,0 +1,43 @@
+<div class="container" id="header">
+    <div>
+        <h4>FASHION</h4>
+    </div>
+
+    <div class="desktop-head">
+        <div class="product-div">
+            <a [routerLink]="'/men'">MEN</a>
+            <a [routerLink]="'/women'">WOMEN</a>
+            <a [routerLink]="'/kids'">KIDS</a>
+            <a [routerLink]="'/collections'">COLLECTIONS</a>
+            <a [routerLink]="'/trending'">TRENDS</a>
+        </div>
+
+        <img src="assets/shopping-bags.png" alt="cart" id="cart-img" [routerLink]="'/cart'"> 
+
+        <button [routerLink]="'/login'">LOG IN</button>
+
+    </div>
+
+
+    <div class="second-part">
+        <button [routerLink]="'/login'">LOG IN</button>
+        <img src="assets/shopping-bags.png" alt="cart" id="cart-img" [routerLink]="'/cart'"> 
+         
+        <div>
+            <svg width="30" height="35" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" (click)="dropDown()">
+                <rect x="5" y="12" width="25" height="3" fill="#FFFFFF"/>
+                <rect x="10" y="20" width="15" height="3" fill="#FFFFFF"/>
+                <rect x="5" y="28" width="25" height="3" fill="#FFFFFF"/>
+            </svg>
+            <div id="myDropdown" class="dropdown-content">
+                <a [routerLink]="'/men'">MEN</a>
+                <a [routerLink]="'/women'">WOMEN</a>
+                <a [routerLink]="'/kids'">KIDS</a>
+                <a [routerLink]="'/collections'">COLLECTIONS</a>
+                <a [routerLink]="'/trending'">TRENDS</a>
+            </div>
+        </div>
+        
+          
+    </div>
+</div>
