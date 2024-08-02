@@ -11,9 +11,12 @@ import { RouterLink } from '@angular/router';
 })
 export class HeaderComponent {
 
-  isDropdownOpen = false;
-
-  dropDown(): void {
-    this.isDropdownOpen = !this.isDropdownOpen;
+  dropDown(){
+    console.log('hey it has been clicked')
+    const dropdown = document.getElementById("myDropdown")
+    if(dropdown){
+      dropdown.classList.toggle('show')
+      console.log('i should show this content')
+    }
   }
 }

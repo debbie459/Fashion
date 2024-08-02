@@ -13,6 +13,9 @@ footer{
     color: white;
 }
 
+.image-row-desktop{
+    display: none;
+}
 
 #picture-row{
     width: 100%;
