@@ -150,88 +150,21 @@
         </nav>
         
         <div class="products-div">
-            <div class="products-item">
-                <div class="main-image">
-                    <img src="assets/guy1.png" >
-                </div>
-                <div class="other-part">
-                    <img src="assets/stars.png">
-                    <h5>Big Jacket</h5>
-                    <div>
-                        <span>$20</span><span>$10</span>
+            @for (
+                image of images; track $index) {
+                    <div class="products-item" >
+                        <div class="main-image">
+                            <img src="{{image.guy}}" >
+                        </div>
+                        <div class="other-part">
+                            <img src="assets/stars.png">
+                            <h5>Big Jacket</h5>
+                            <div>
+                                <span>$20</span><span>$10</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="products-item">
-                <div class="main-image">
-                    <img src="assets/guy1.png" >
-                </div>
-                <div class="other-part">
-                    <img src="assets/stars.png">
-                    <h5>Big Jacket</h5>
-                    <div>
-                        <span>$20</span><span>$10</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="products-item">
-                <div class="main-image">
-                    <img src="assets/guy1.png" >
-                </div>
-                <div class="other-part">
-                    <img src="assets/stars.png">
-                    <h5>Big Jacket</h5>
-                    <div>
-                        <span>$20</span><span>$10</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="products-item">
-                <div class="main-image">
-                    <img src="assets/guy1.png" >
-                </div>
-                <div class="other-part">
-                    <img src="assets/stars.png">
-                    <h5>Big Jacket</h5>
-                    <div>
-                        <span>$20</span><span>$10</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="products-item">
-                <div class="main-image">
-                    <img src="assets/guy1.png" >
-                </div>
-                <div class="other-part">
-                    <img src="assets/stars.png">
-                    <h5>Big Jacket</h5>
-                    <div>
-                        <span>$20</span><span>$10</span>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="products-item">
-                <div class="main-image">
-                    <img src="assets/guy1.png" >
-                </div>
-                <div class="other-part">
-                    <img src="assets/stars.png">
-                    <h5>Big Jacket</h5>
-                    <div>
-                        <span>$20</span><span>$10</span>
-                    </div>
-                </div>
-            </div>
-
-            
-
-
+                }
             
         </div>
 
@@ -276,83 +209,18 @@
         <p id="other-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum non pellentesque </p>
 
         <div class="review-div">
-            <div class="testimonial">
-                <h5>the items came to me fas</h5>
-                <h6>i ordered a medium and it came as ordered</h6>
-                <p>Sed sed feugiat eros, massa vestibulum at curabitur. Tellus hendrerit ut integer pellentesque sit. Cras integer et quisque libero nulla dignissim faucibus ornare. Libero, ut a diam varius. Blandit molestie ultrices .</p>
-                <div>
-                    <img src="assets/customer-pic.png">
-                    <h5>Bradley Bright</h5>
-                    <p>Customer</p>
+            @for (custImage of customerImage; track $index) {
+                <div class="testimonial">
+                    <h5>the items came to me fas</h5>
+                    <h6>i ordered a medium and it came as ordered</h6>
+                    <p>Sed sed feugiat eros, massa vestibulum at curabitur. Tellus hendrerit ut integer pellentesque sit. Cras integer et quisque libero nulla dignissim faucibus ornare. Libero, ut a diam varius. Blandit molestie ultrices .</p>
+                    <div>
+                        <img src="{{custImage.img}}">
+                        <h5>Bradley Bright</h5>
+                        <p>Customer</p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="testimonial">
-                <h5>the items came to me fas</h5>
-                <h6>i ordered a medium and it came as ordered</h6>
-                <p>Sed sed feugiat eros, massa vestibulum at curabitur. Tellus hendrerit ut integer pellentesque sit. Cras integer et quisque libero nulla dignissim faucibus ornare. Libero, ut a diam varius. Blandit molestie ultrices .</p>
-                <div>
-                    <img src="assets/customer-pic.png">
-                    <h5>Bradley Bright</h5>
-                    <p>Customer</p>
-                </div>
-            </div>
-
-            <div class="testimonial">
-                <h5>the items came to me fas</h5>
-                <h6>i ordered a medium and it came as ordered</h6>
-                <p>Sed sed feugiat eros, massa vestibulum at curabitur. Tellus hendrerit ut integer pellentesque sit. Cras integer et quisque libero nulla dignissim faucibus ornare. Libero, ut a diam varius. Blandit molestie ultrices .</p>
-                <div>
-                    <img src="assets/customer-pic.png">
-                    <h5>Bradley Bright</h5>
-                    <p>Customer</p>
-                </div>
-            </div>
-
-            <div class="testimonial">
-                <h5>the items came to me fas</h5>
-                <h6>i ordered a medium and it came as ordered</h6>
-                <p>Sed sed feugiat eros, massa vestibulum at curabitur. Tellus hendrerit ut integer pellentesque sit. Cras integer et quisque libero nulla dignissim faucibus ornare. Libero, ut a diam varius. Blandit molestie ultrices .</p>
-                <div>
-                    <img src="assets/customer-pic.png">
-                    <h5>Bradley Bright</h5>
-                    <p>Customer</p>
-                </div>
-            </div>
-
-            <div class="testimonial">
-                <h5>the items came to me fas</h5>
-                <h6>i ordered a medium and it came as ordered</h6>
-                <p>Sed sed feugiat eros, massa vestibulum at curabitur. Tellus hendrerit ut integer pellentesque sit. Cras integer et quisque libero nulla dignissim faucibus ornare. Libero, ut a diam varius. Blandit molestie ultrices .</p>
-                <div>
-                    <img src="assets/customer-pic.png">
-                    <h5>Bradley Bright</h5>
-                    <p>Customer</p>
-                </div>
-            </div>
-
-            <div class="testimonial">
-                <h5>the items came to me fas</h5>
-                <h6>i ordered a medium and it came as ordered</h6>
-                <p>Sed sed feugiat eros, massa vestibulum at curabitur. Tellus hendrerit ut integer pellentesque sit. Cras integer et quisque libero nulla dignissim faucibus ornare. Libero, ut a diam varius. Blandit molestie ultrices .</p>
-                <div>
-                    <img src="assets/customer-pic.png">
-                    <h5>Bradley Bright</h5>
-                    <p>Customer</p>
-                </div>
-            </div>
-
-            <div class="testimonial">
-                <h5>the items came to me fas</h5>
-                <h6>i ordered a medium and it came as ordered</h6>
-                <p>Sed sed feugiat eros, massa vestibulum at curabitur. Tellus hendrerit ut integer pellentesque sit. Cras integer et quisque libero nulla dignissim faucibus ornare. Libero, ut a diam varius. Blandit molestie ultrices .</p>
-                <div>
-                    <img src="assets/customer-pic.png">
-                    <h5>Bradley Bright</h5>
-                    <p>Customer</p>
-                </div>
-            </div>
-
+            }
             
         </div>
     </div>
