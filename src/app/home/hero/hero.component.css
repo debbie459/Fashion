@@ -43,11 +43,6 @@
     font-weight: bold;
 
 }   
-
-
-
-
-
 .curved-div{
     background-color: rgb(254, 228, 193);
     border-top-left-radius: 70% 100%;
@@ -64,6 +59,10 @@
     width: 100%;
     height: 100%;
     display: block;
+}
+.shop{
+    margin-left: 2rem;
+    margin-top: 0.8rem;
 }
 
 .new-collections{
