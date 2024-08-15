@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { ICustomerImage, IModel } from '../../models/value';
 
 @Component({
   selector: 'app-hero',
@@ -9,7 +10,35 @@ import { RouterLink } from '@angular/router';
   styleUrls: ['./hero.component.css']
 })
 export class HeroComponent {
-
+  images: IModel[] =  [
+    {
+      guy: "assets/guy1.png",
+      jacket: "assets/stars.png",
+    },
+    {
+      guy: "assets/guy1.png",
+      jacket: "assets/stars.png"
+    },
+    {
+      guy: "assets/guy1.png",
+      jacket: "assets/stars.png"
+    },
+    {
+      guy: "assets/guy1.png",
+      jacket: "assets/stars.png"
+    },
+    {
+      guy: "assets/guy1.png",
+      jacket: "assets/stars.png"
+    }
+  ]
+  customerImage: ICustomerImage[] = [
+    {img: "assets/customer-pic.png"},
+    {img: "assets/customer-pic.png"},
+    {img: "assets/customer-pic.png"},
+    {img: "assets/customer-pic.png"},
+    {img: "assets/customer-pic.png"},
+  ]
   // ngOnInit(): void {
   //   const items: NodeListOf<HTMLElement> = document.querySelectorAll('.carousel-items');
   //   const buttons: NodeListOf<HTMLButtonElement> = document.querySelectorAll('.carousel-controls button');
